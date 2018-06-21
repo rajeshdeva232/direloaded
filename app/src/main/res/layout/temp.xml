@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="70sp">
+
+    <RelativeLayout
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="5sp"
+        android:layout_width="wrap_content"
+        android:background="@drawable/next_bg"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:paddingLeft="10sp"
+            android:id="@+id/tvNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:textColor="@color/colorWhite"
+            android:src="@drawable/rectangle_border"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="-5sp"
+            android:text="Next"
+            android:textSize="52dp" />
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_toRightOf="@+id/tvNext"
+            android:gravity="center"
+            app:srcCompat="@drawable/back_right" />
+
+    </RelativeLayout>
+</FrameLayout>

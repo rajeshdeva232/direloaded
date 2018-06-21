@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:theme="@style/AppTheme.NoActionBar"
+    tools:context="com.cog.Dropinn.Host.Hostinbox_Fragment">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:text="Inbox"
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <include
+        android:id="@+id/recycle_include"
+        layout="@layout/inbox_recycleview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar" />
+
+
+
+
+
+
+</RelativeLayout>

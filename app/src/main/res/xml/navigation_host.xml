@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/navigation_inbox_host"
+        icon="@drawable/inpox_icn"
+        title="@string/inbox"/>
+    <tab
+        id="@+id/navigation_calender"
+        icon="@drawable/calender_ic"
+        title="CALENDAR" />
+    <tab
+        id="@+id/navigation_listing"
+        icon="@drawable/listing_ic"
+        title="LISTINGS" />
+
+    <tab
+        id="@+id/navigation_profile_host"
+        icon="@drawable/profile_icn"
+        title="@string/profile" />
+</tabs>

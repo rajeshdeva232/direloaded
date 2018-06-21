@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.cog.Dropinn.Traveller.PaymentTraveller">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/account_background"
+        android:elevation="5dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/back_arrow_size"
+            android:layout_height="@dimen/back_arrow_size"
+            android:layout_marginStart="@dimen/back_arrow_top"
+            android:layout_marginTop="@dimen/back_arrow_start"
+            app:srcCompat="@drawable/back_arrow_black" />
+
+        <TextView
+            android:id="@+id/tvPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="end"
+            android:text="Payment"
+            android:textColor="#000"
+            android:textSize="21sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_payment"
+        android:text="Payment Method"
+        android:textSize="25dp"
+        android:layout_margin="30dp"
+        android:id="@+id/payment_tv"/>
+    <Button
+        android:id="@+id/buttonok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/payment_ic"
+        android:text="Stripe"
+        android:textAllCaps="false"
+        android:layout_below="@id/payment_tv"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:textAlignment="center"
+        android:elevation="4dp"
+        />
+
+
+</RelativeLayout>

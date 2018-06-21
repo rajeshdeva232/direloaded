@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="30dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you sure you want to logout?"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/dilog_tittle"
+        android:textSize="20dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dilog_tittle"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:text="CANCEL"
+                android:id="@+id/no"
+                android:textSize="17dp"
+                android:layout_marginEnd="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOG OUT"
+                android:textSize="17dp"
+                android:id="@+id/yes"
+                android:textColor="@color/bgBottomNavigation"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

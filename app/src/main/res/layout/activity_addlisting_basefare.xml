@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cog.Dropinn.Host.Activity.AddListing_BaseFare">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="40" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/ivBack"
+                android:layout_width="@dimen/back_arrow_size"
+                android:layout_height="@dimen/back_arrow_size"
+                android:layout_marginStart="@dimen/back_arrow_top"
+                android:layout_marginTop="24sp"
+                app:srcCompat="@drawable/back_arrow_black" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar_settings"
+            android:layout_marginEnd="@dimen/back_arrow_start"
+            android:layout_marginStart="@dimen/back_arrow_start"
+            android:layout_marginTop="10sp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/addListingContentSpacing" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar_payment"
+                android:layout_marginStart="2sp"
+                android:text="Base price"
+                android:textColor="@color/addListingTitleColor"
+                android:textSize="@dimen/addListingTitleSize"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar_payment"
+                android:layout_marginBottom="10sp"
+                android:layout_marginStart="2sp"
+                android:layout_marginTop="10sp"
+                android:gravity="start"
+                android:text="Your base price is your default nightly rate"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/addListingContentSpacing" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5sp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:text="Price per night"
+                    android:textColor="@color/colorLightBlack"
+                    android:textSize="21sp" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="21sp"
+                    android:background="@color/transparent"
+                    android:hint="0"
+                    android:layout_marginTop="15dp"
+                    android:inputType="number"
+                    android:textColor="@color/colorTextColorBlack"
+                    android:textSize="@dimen/settingsInnerTextSize" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15sp"
+                    android:background="#DCDCDC" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5sp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cleaning_charge"
+                    android:textColor="@color/colorLightBlack"
+                    android:textSize="18sp"
+                    />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15sp"
+                    android:background="@color/transparent"
+                    android:hint="0"
+                    android:layout_marginTop="15dp"
+                    android:inputType="number"
+                    android:textColor="@color/colorTextColorBlack"
+                    android:textSize="@dimen/settingsInnerTextSize" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15sp"
+                    android:background="#DCDCDC" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:orientation="vertical"
+                android:padding="5sp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/service_charge"
+                    android:textColor="@color/colorLightBlack"
+                    android:textSize="21sp" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15sp"
+                    android:background="@color/transparent"
+                    android:hint="0"
+                    android:layout_marginTop="15dp"
+                    android:inputType="number"
+                    android:textColor="@color/colorTextColorBlack"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15sp"
+                    android:background="#DCDCDC" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:orientation="vertical"
+                android:textColor="@color/colorLightBlack"
+                android:visibility="gone">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp"
+                    android:text="State"
+                    android:textColor="@color/colorLightBlack"
+                    android:textSize="18sp" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15sp"
+                    android:backgroundTint="#DCDCDC"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:text="Tamilnadu"
+                    android:textColor="@color/colorTextColorBlack"
+                    android:textSize="@dimen/settingsInnerTextSize" />
+            </LinearLayout>
+
+            <!--<android.support.v7.widget.AppCompatButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="end"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:background="@drawable/corner"-->
+            <!--android:text="Complete"-->
+            <!---->
+            <!--android:textAllCaps="false"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="16sp" />-->
+
+        </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/next_bg"
+        android:layout_margin="15dp"
+        android:id="@+id/btnNext"
+        android:layout_below="@+id/content_layout"
+        android:layout_alignParentEnd="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:id="@+id/text"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="11dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            />
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="20sp"
+            android:layout_height="17sp"
+            app:srcCompat="@drawable/arrow_btn"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@+id/text"/>
+
+    </RelativeLayout>
+
+    <!--<android.support.v7.widget.AppCompatButton-->
+        <!--android:id="@+id/btnNext"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_gravity="end"-->
+        <!--android:layout_margin="15dp"-->
+        <!--android:background="@drawable/next_bg"-->
+        <!--android:elevation="6dp"-->
+        <!--android:text="Next"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textColor="#fff"-->
+        <!--android:textSize="16sp" />-->
+
+
+</RelativeLayout>

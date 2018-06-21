@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_calendar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:id="@+id/date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/check_in_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10sp"
+            android:layout_weight="1"
+            android:layout_marginTop="10sp"
+            android:gravity="center_vertical|start"
+            android:text="Check-in"
+            android:textColor="@color/colorWhite"
+            android:textSize="27sp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="60sp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="@color/colorWhite"
+            android:rotation="35" />
+
+        <TextView
+            android:id="@+id/check_out_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="center_vertical|end"
+            android:layout_marginTop="11sp"
+            android:text="Checkout"
+            android:textColor="@color/colorWhite"
+            android:textSize="27sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/days_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/day_1"
+            style="@style/CalendarCell.CalendarDate"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="S"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/day_2"
+            style="@style/CalendarCell.CalendarDate"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="M"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/day_3"
+            style="@style/CalendarCell.CalendarDate"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="T"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/day_4"
+            style="@style/CalendarCell.CalendarDate"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="W"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/day_5"
+            style="@style/CalendarCell.CalendarDate"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="T"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/day_6"
+            style="@style/CalendarCell.CalendarDate"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="F"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/day_7"
+            style="@style/CalendarCell.CalendarDate"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="S"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@+id/days_layout"
+        android:background="@color/colorWhite" />
+
+    <com.cog.Dropinn.Utils.timessquare.CalendarPickerView
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/done_button"
+        android:layout_below="@+id/days_layout"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="@color/appColor"
+        android:clipToPadding="false"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="none"
+        app:tsquare_dayBackground="@drawable/custom_calendar_bg_selector"
+        app:tsquare_titleTextColor="@color/colorWhite" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@+id/calendar_view"
+        android:background="@color/colorWhite" />
+
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_button"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary" />
+
+    <ImageButton
+        android:id="@+id/button_close"
+        android:layout_width="12sp"
+        android:layout_height="12sp"
+        android:layout_marginStart="@dimen/back_arrow_start"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:background="@null"
+        app:srcCompat="@drawable/ic_close" />
+
+    <TextView
+        android:id="@+id/clear_dates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button_close"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-5sp"
+        android:gravity="center"
+        android:text="Clear"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorWhite" />
+
+</RelativeLayout>

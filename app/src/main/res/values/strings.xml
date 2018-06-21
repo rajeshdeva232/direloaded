@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">DropInn</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="Welcome">Welcome to DropInn.</string>
+    <string name="Terms">By tapping Continue, Create Account or More options, I agree to Dropinn Terms of Service, Payments Terms of Service, Privacy Policy, and Non-Discrimination Policy.</string>
+    <string name="what_s_your_name">What\'s your name?</string>
+    <string name="create_account">create_account</string>
+    <string name="continue_with_facebook">continue_with_facebook</string>
+    <string name="log_in">log_in</string>
+    <string name="explore">EXPLORE</string>
+    <string name="saved">SAVED</string>
+    <string name="inbox">INBOX</string>
+    <string name="profile">PROFILE</string>
+    <string name="dropinn">TRIPS</string>
+
+    <string name="invalid_date">Date must be between %1$s and %2$s.</string>
+    <string name="month_name_format">MMMM yyyy</string>
+    <string name="day_name_format">EEE</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="saved_small">Saved</string>
+    <string name="save_content">When you see something you like, tab on the heart to save it. If you\'re planning a trip with others, invite them so they can save and vote on their favourites.</string>
+    <string name="start_exploring">Start exploring</string>
+    <string name="welome_notofication">Add your work email unlock priorrity email. Unlock priority supports and extra points</string>
+    <string name="cleaning_charge">Cleaning Fee</string>
+    <string name="service_charge">Service Fee</string>
+    <string name="when_you_publish_a_listing_you_ll_be_able_to_see_and_edit_your_calendar_here">When you publish a listing you\'ll be able to see and edit your calendar here.</string>
+    <string-array name="currency_name_list">
+        <item>AED\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020د.إ</item>
+        <item>ARS\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020$</item>
+        <item>BGN\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020A$</item>
+        <item>BRL\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020лв</item>
+        <item>CAD\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020$</item>
+        <item>CHF\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020CHF</item>
+        <item>CLP\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020$</item>
+        <item>CNY\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020¥</item>
+        <item>COP\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020$</item>
+        <item>CRC\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020₡</item>
+        <item>CZK\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020Kč</item>
+        <item>DKK\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020kr</item>
+        <item>EUR\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020€</item>
+        <item>GBP\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020£ </item>
+        <item>HKD\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020$</item>
+        <item>HRK\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020kn</item>
+        <item>HUF\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020Ft</item>
+        <item>IDR\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020Rp</item>
+        <item>ILS\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020₪</item>
+        <item>INR\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020₹</item>
+        <item>JPY\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020¥</item>
+        <item>KRW\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020₩</item>
+        <item>MAD\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020.د.م</item>
+        <item>MXN\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020$</item>
+        <item>MYR\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020RM</item>
+        <item>NOK\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020NOK</item>
+        <item>NZD\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020$</item>
+        <item>PEN\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020S/.</item>
+        <item>PHP\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020₱</item>
+        <item>PLN\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020zł</item>
+        <item>RON\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020lei</item>
+        <item>RUB\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020₽</item>
+        <item>SAR\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020﷼</item>
+        <item>SEK\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020kr</item>
+        <item>SGD\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020$</item>
+        <item>THB\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020฿</item>
+        <item>TRY\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020$</item>
+        <item>TWD\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020NT$</item>
+        <item>UKD\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020$</item>
+        <item>UAH\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020₴</item>
+        <item>UKD\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020$</item>
+        <item>USD\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020$</item>
+        <item>UYU\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020$U</item>
+        <item>VND\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020₫</item>
+        <item>ZAR\u0020\u0020\u0020\u0020\u0020\u0020|\u0020\u0020\u0020\u0020\u0020\u0020R</item>
+    </string-array>
+    <string name="title_activity_add_listing">AddListing</string>
+    <string name="age_restriction">You must be atleast 18 years old to use dropinn. Others won\'t see your birthday.</string>
+    <string name="show">Show</string>
+    <string name="show_pass">Show password</string>
+    <string name="hide">Hide</string>
+    <string name="notvalid">Credential Not valid</string>
+    <string name="invalidbirthdate">Birthday Error.To signup,you must be 18 or older</string>
+    <string name="passwordweek">Your password is too weak. Do not use any common passwords, repetition or sequences. Try making it longer or adding symbols, like !,#, or %</string>
+    <string name="passwordname">Your password cannot use any part of your name or email.</string>
+    <string name="facebook_app_id">857880211060949</string>
+    <string name="fb_login_protocol_scheme">fb1750799354983839</string>
+    <string name="close">Close</string>
+    <string name="password_content">Your password must be 8 or more characters long.Do not use any common password, repetition or sequences. Try making it longer or adding symbols, like !, #, or %.</string>
+    <string name="emailerror">This seems to be an invalid email. Please check if your email has been entered correctly</string>
+    <string name="describe_house">Perfect family cottage on 300 feet of very private forested
+        frontage, private beach shared with six neighbors. To get away from it all,you will have
+        only a radio, no house phone, mail, internet or TV. Shopping, restaurants, orchards nearby.
+    </string>
+</resources>

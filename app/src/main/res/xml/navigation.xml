@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs xmlns:android="http://schemas.android.com/apk/res/android">
+    <tab
+        id="@+id/navigation_expor"
+        icon="@drawable/explore_icn"
+        android:enabled="true"
+        title="@string/explore" />
+    <tab
+        id="@+id/navigation_save"
+        icon="@drawable/favorite_icn"
+        android:enabled="true"
+        title="@string/saved" />
+    <tab
+        id="@+id/navigation_trips"
+        android:enabled="true"
+        icon="@drawable/ic_app_logo_black"
+        title="@string/dropinn" />
+    <tab
+        id="@+id/navigation_inbox"
+        icon="@drawable/inpox_icn"
+        android:enabled="true"
+        title="@string/inbox" />
+    <tab
+        id="@+id/navigation_profile"
+        icon="@drawable/profile_icn"
+        android:enabled="true"
+        title="@string/profile" />
+</tabs>

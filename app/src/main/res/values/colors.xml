@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#007d8c</color>
+    <color name="colorPrimaryDark">#007d8c</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimaryRipple">#fe485a</color>
+
+    <!--Predefined Color Code-->
+    <color name="appColor">#007d8c</color>
+    <color name="app_lite">#006673</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorDarkBlack">#9e9c9c</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="bgBottomNavigation">#fe485a</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="close">#484848</color>
+    <color name="gainsboro">#DCDCDC</color>
+    <color name="colorLightBlack">#424040</color>
+    <color name="colorTextColorBlack">#585757</color>
+    <color name="silver">#C0C0C0</color>
+
+
+    <!--Times Square Calendar-->
+    <color name="calendar_active_month_bg">#000000</color>
+    <color name="calendar_bg">#000000</color>
+    <color name="calendar_divider">#00000000</color>
+    <color name="calendar_inactive_month_bg">#000000</color>
+    <color name="calendar_selected_day_bg">#ffffff</color>
+    <color name="calendar_highlighted_day_bg">#ffffff</color>
+    <color name="calendar_selected_range_bg">#ffffff</color>
+    <color name="calendar_text_inactive">#000000</color>
+    <color name="calendar_text_active">#ffffff</color>
+    <color name="week_disable">#00000000</color>
+    <color name="calendar_text_selected">#000000</color>
+    <color name="calendar_text_unselectable">#7f778088</color>
+    <color name="calendar_text_highlighted">#ff778088</color>
+    <color name="red">#D93900</color>
+    <color name="duskYellow">#FAB915</color>
+    <color name="addListingTitleColor">#292929</color>
+    <color name="viewbarcolour">#2bdaef</color>
+
+</resources>
+
+

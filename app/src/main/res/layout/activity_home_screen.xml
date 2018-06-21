@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_launch"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".both.SignInSignUp.HomeScreenActivity">
+
+<ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:srcCompat="@drawable/vclose"
+    android:background="@null"
+    android:padding="10dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:id="@+id/imgBtClose"
+    tools:ignore="VectorDrawableCompat" />
+
+<TextView
+    android:text="Log in"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:padding="10dp"
+    android:textColor="@color/colorPrimary"
+    android:gravity="center"
+    android:layout_marginRight="10dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:id="@+id/login_text"
+    android:layout_alignBottom="@+id/imgBtClose" />
+
+<TextView
+    android:text="@string/app_name"
+    android:padding="20dp"
+    android:textSize="25sp"
+    android:textStyle="bold"
+    android:textColor="@color/colorPrimary"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/login_text"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/title_text" />
+
+<TextView
+    android:text="By Signing up, I agree to DropInn's Terms of services, Non-Discrimination Policy,Payments Terms of Service, Privacy Policy, Guest Refund policy and Host Guarantee terms"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:gravity="start"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginBottom="30dp"
+    android:id="@+id/textView3"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true" />
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:id="@+id/view" />
+
+<Button
+    android:text="Create Account"
+    android:textAllCaps="false"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textColor="@color/colorPrimary"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/vbutton_outer_background"
+    android:id="@+id/create_account"
+    android:layout_marginBottom="20dp"
+    android:layout_alignBottom="@+id/view"
+    android:layout_alignStart="@+id/create_social"
+    android:layout_alignEnd="@+id/create_social" />
+
+<Button
+    android:text="Social Connect"
+    android:textAllCaps="false"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textColor="@color/colorWhite"
+    android:background="@drawable/vbutton_background"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="20dp"
+    android:id="@+id/create_social"
+    android:layout_below="@+id/view"
+    android:layout_centerHorizontal="true" />
+</RelativeLayout>

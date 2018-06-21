@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <item
+            android:id="@+id/navigation_expor"
+            android:icon="@drawable/explore_icn"
+            android:title="@string/explore"
+            app:showAsAction="ifRoom"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+        <item
+            android:id="@+id/navigation_save"
+            android:icon="@drawable/favorite_icn"
+            android:title="@string/saved"
+            app:showAsAction="ifRoom"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+        <item
+            android:id="@+id/navigation_trips"
+            android:icon="@drawable/ic_app_logo_black"
+            android:title="@string/dropinn"
+            app:showAsAction="ifRoom"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+        <item
+            android:id="@+id/navigation_inbox"
+            android:icon="@drawable/inpox_icn"
+            android:title="@string/inbox"
+            app:showAsAction="ifRoom"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+        <item
+            android:id="@+id/navigation_profile"
+            android:icon="@drawable/profile_icn"
+            android:title="@string/profile"
+            app:showAsAction="ifRoom"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+
+
+
+</menu>

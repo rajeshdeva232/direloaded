@@ -1,0 +1,123 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.cog.Dropinn.Host.Settings_fragment">
+
+        <!-- TODO: Update blank fragment layout -->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/account_background"
+            android:elevation="5dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/ivBack"
+                android:layout_width="@dimen/back_arrow_size"
+                android:layout_height="@dimen/back_arrow_size"
+                android:layout_marginStart="@dimen/back_arrow_top"
+                android:layout_marginTop="@dimen/back_arrow_start"
+                app:srcCompat="@drawable/back_arrow_black" />
+
+            <TextView
+                android:id="@+id/tvSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="end"
+                android:text="Settings"
+                android:textColor="#000"
+                android:textSize="21sp" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:id="@+id/layout_currency"
+            style="@style/profile_Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar_settings">
+
+            <TextView
+                android:id="@+id/tvCurrency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Currency"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvCurrencySymbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:text="INR"
+                android:textColor="@color/colorRed"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/v_currency"
+                style="@style/profile_Layout_view"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/tvCurrency" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_about"
+            style="@style/profile_Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_currency">
+
+            <TextView
+                android:id="@+id/tvAbout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/v_about"
+                style="@style/profile_Layout_view"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/tvAbout" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_logout"
+            style="@style/profile_Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_about">
+
+            <TextView
+                android:id="@+id/tvLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log Out"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/v_logout"
+                style="@style/profile_Layout_view"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/tvLogout" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/fill_space"
+            android:layout_width="match_parent"
+            android:layout_height="70sp"
+            android:layout_below="@+id/layout_logout"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150sp"
+    android:layout_marginLeft="@dimen/back_arrow_start"
+    android:layout_marginRight="@dimen/back_arrow_start"
+    android:layout_marginTop="@dimen/back_arrow_start"
+    android:elevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_img"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/back_arrow_start"
+                android:elevation="5dp"
+                android:src="@drawable/placeholder_inbox" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="25sp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/guestname_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:text="GuestName : Rathna232"
+                android:textColor="#929292" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2sp"
+                android:text="22/01/2018 - 30/01/2018"
+                android:textColor="#929292" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2sp"
+                android:text="$450 - 4 Guests"
+                android:textColor="#929292" />
+
+            <TextView
+                android:id="@+id/tittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2sp"
+                android:text="Pending - Wondering"
+                android:textColor="#929292" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2sp">
+
+        <TextView
+            android:id="@+id/ago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="2sp"
+            android:text="3 Days ago"
+            android:textColor="#92d36e" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/noTripsScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7sp">
+
+            <LinearLayout
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvAdventure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:gravity="center"
+                    android:text="What will be your first"
+                    android:textAlignment="gravity"
+                    android:textColor="#666565"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tvAdventure1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="adventure ?"
+                    android:textAlignment="gravity"
+                    android:textColor="#666565"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/circleChange"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/heading"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/circle">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/ivAutochange"
+                    android:layout_width="70sp"
+                    android:layout_height="70sp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v1"
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/circleChange"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#cfcaca" />
+
+            <TextView
+                android:id="@+id/tvStartExploring"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v1"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5sp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Start exploring"
+                android:textAlignment="gravity"
+                android:textColor="@color/appColor"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/v2"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tvStartExploring"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="5sp"
+                android:background="#CFCACA" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

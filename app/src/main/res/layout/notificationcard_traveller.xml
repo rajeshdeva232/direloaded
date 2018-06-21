@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100sp"
+    android:layout_marginLeft="@dimen/back_arrow_start"
+    android:layout_marginRight="@dimen/back_arrow_start"
+    android:layout_marginTop="@dimen/back_arrow_start"
+    android:elevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/back_arrow_start"
+                android:elevation="5dp"
+                android:id="@+id/profile_img"
+                android:src="@drawable/placeholder_inbox" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5sp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.codesgood.views.JustifiedTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_centerInParent="true"
+                android:text="@string/welome_notofication"
+                android:id="@+id/notification_tv"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

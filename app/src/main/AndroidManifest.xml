@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cog.Dropinn">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- android:roundIcon="@mipmap/ic_launcher_round" -->
+    <application
+        android:name=".Utils.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/MyMaterialTheme"
+        android:vmSafeMode="true"
+        tools:replace="android:icon">
+        <activity
+            android:name=".both.UI.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".both.UI.HomeScreenActivity" />
+        <activity
+            android:name=".both.SignInSignUp.SignupName"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".both.SignInSignUp.SignupEmail"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".both.SignInSignUp.SignupPassword"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".both.SignInSignUp.SignupDob"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".both.SignInSignUp.Login"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Traveller.Activity.Traveller_Activity"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".both.SignInSignUp.Forgot_password"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".Host.Activity.Host_Activity" />
+        <activity android:name=".Host.UI.HostSplash_Activity" />
+        <activity android:name=".both.UI.TravellerSplash_Activity" />
+        <activity android:name=".both.UI.WelcomeActivity" />
+        <activity android:name=".Traveller.Booknow" />
+        <activity android:name=".both.CalendarActivity" />
+        <activity android:name=".Host.Activity.AddListing_Place" />
+        <activity android:name=".Host.Activity.AddListing_Room" />
+        <activity android:name=".Host.Activity.AddListing_Located" />
+        <activity android:name=".Host.Activity.AddListing_Photo" />
+        <activity android:name=".Host.Activity.AddListing_Title" />
+        <activity android:name=".Host.Activity.AddListing_BaseFare" />
+        <activity android:name=".Host.Activity.AddListing_Start" />
+        <activity android:name=".Host.Activity.Addlisting_Desc" />
+        <activity android:name=".Traveller.Activity.selectLocation_Activity" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider857880211060949"
+            android:exported="true" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity android:name=".Utils.imageUtils" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:screenOrientation="portrait"
+            android:value="@string/facebook_app_id" />
+
+        <activity android:name=".Traveller.Activity.Listing_details"></activity>
+        <activity android:name=".Traveller.ContactHost" />
+    </application>
+
+</manifest>

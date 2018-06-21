@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_Profilr"
+        android:elevation="6dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            >
+            <!--android:layout_marginStart="15dp"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_marginEnd="15dp"-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mark"
+                android:textSize="30sp"
+                android:id="@+id/tvName"
+                android:textStyle="bold"
+                android:textColor="#696969"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View and edit profile"
+                android:layout_below="@+id/tvName"
+                android:textSize="20dp"
+                android:id="@+id/etViewProfile"
+                android:layout_marginTop="15dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentEnd="true"
+                android:src="@mipmap/ic_launcher_round"
+                android:id="@+id/profilr_img"/>
+
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_below="@+id/etprofile_tv"-->
+            <!--style="@style/profile_Layout_view"-->
+            <!--android:id="@+id/v_profile"/>-->
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+    <!--android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_Notification"
+        android:layout_below="@+id/layout_Profilr"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notifications"
+            android:textSize="20sp"
+            android:id="@+id/tvNotifications" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@drawable/notification_ic"
+            android:layout_alignParentEnd="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            style="@style/profile_Layout_view"
+            android:layout_below="@+id/tvNotifications"
+            android:id="@+id/v_notification"/>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_Host"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@id/layout_Notification">
+
+        <TextView
+            android:id="@+id/tvSwitchHost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Switch to Travelling"
+            android:textSize="20sp" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@drawable/switch_mode"
+            android:layout_alignParentEnd="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_below="@+id/tvSwitchHost"
+            style="@style/profile_Layout_view"
+            android:id="@+id/v_Host"/>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_Payment"
+        style="@style/profile_Layout"
+        android:layout_below="@id/layout_Host"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payments"
+            android:id="@+id/tvPayments"
+            android:textSize="20sp"
+            />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@drawable/payment_ic"
+            android:layout_alignParentEnd="true"/>
+
+        <View
+            android:layout_width="match_parent"
+
+            android:layout_below="@+id/tvPayments"
+            style="@style/profile_Layout_view"
+            android:id="@+id/v_Payment"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_settings"
+        style="@style/profile_Layout"
+        android:layout_below="@id/layout_Payment">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:id="@+id/tvSettings"
+            android:textSize="20sp"
+            />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@drawable/settings_ic"
+            android:layout_alignParentEnd="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_below="@+id/tvSettings"
+            style="@style/profile_Layout_view"
+            android:id="@+id/v_Help"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_help"
+        style="@style/profile_Layout"
+        android:layout_below="@id/layout_settings">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help"
+            android:id="@+id/tvHelp"
+            android:textSize="20sp"
+            />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@drawable/help_ic"
+            android:layout_alignParentEnd="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_below="@+id/tvHelp"
+            style="@style/profile_Layout_view"
+            android:id="@+id/v_Settings"/>
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

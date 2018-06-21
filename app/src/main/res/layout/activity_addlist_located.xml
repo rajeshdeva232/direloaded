@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="70" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/ivBack"
+                android:layout_width="@dimen/back_arrow_size"
+                android:layout_height="@dimen/back_arrow_size"
+                android:layout_marginStart="@dimen/back_arrow_top"
+                android:layout_marginTop="24sp"
+                app:srcCompat="@drawable/back_arrow_black" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar_settings"
+            android:layout_marginEnd="@dimen/back_arrow_start"
+            android:layout_marginStart="@dimen/back_arrow_start"
+            android:layout_marginTop="15sp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/addListingContentSpacing" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar_payment"
+                android:padding="5sp"
+                android:text="Where's Your place located ?"
+                android:textColor="@color/addListingTitleColor"
+                android:textSize="@dimen/addListingTitleSize" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/addListingContentSpacing" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5sp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Country"
+                    android:textColor="@color/colorLightBlack"
+                    android:textSize="@dimen/settingsTextSize" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15sp"
+                    android:background="@color/transparent"
+                    android:hint="enter Country"
+                    android:textColor="@color/colorTextColorBlack"
+                    android:textSize="@dimen/settingsInnerTextSize"
+                    android:layout_marginTop="15dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15sp"
+                    android:background="#DCDCDC"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5sp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Street"
+                    android:textColor="@color/colorLightBlack"
+                    android:textSize="@dimen/settingsTextSize" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15sp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/transparent"
+                    android:hint="enter Street name"
+                    android:textColor="@color/colorTextColorBlack"
+                    android:textSize="@dimen/settingsInnerTextSize" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15sp"
+                    android:background="#DCDCDC" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:orientation="vertical"
+                android:padding="5sp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="City"
+                    android:textColor="@color/colorLightBlack"
+                    android:textSize="@dimen/settingsTextSize" />
+
+                <android.support.v7.widget.AppCompatEditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15sp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/transparent"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:hint="enter City"
+                    android:textColor="@color/colorTextColorBlack"
+                    android:textSize="@dimen/settingsInnerTextSize" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15sp"
+                    android:background="#DCDCDC" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:orientation="vertical"
+                android:padding="5sp"
+                android:textColor="@color/colorLightBlack">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="State"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/colorLightBlack"
+                    android:textSize="@dimen/settingsTextSize" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15sp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/transparent"
+                    android:hint="enter State"
+                    android:textColor="@color/colorTextColorBlack"
+                    android:textSize="@dimen/settingsInnerTextSize" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15sp"
+                    android:background="#DCDCDC" />
+            </LinearLayout>
+
+            <!--<android.support.v7.widget.AppCompatButton-->
+                <!--android:id="@+id/btnComplete"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_gravity="end"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:background="@drawable/inbox_btn"-->
+                <!--android:text="Complete"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textColor="#fff" />-->
+            <RelativeLayout
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:background="@drawable/btnlistingcompleted"
+                android:layout_margin="15dp"
+                android:id="@+id/btnComplete"
+                android:layout_gravity="end">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Completed"
+                    android:id="@+id/text"
+                    android:layout_centerInParent="true"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorWhite"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+           </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:ndroid="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/colorWhite"
+        android:fillViewport="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorWhite">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/ivAdd"
+                    android:layout_width="18sp"
+                    android:layout_height="18sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="11dp"
+                    app:srcCompat="@drawable/add_button" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:layout_marginTop="15sp"
+            android:id="@+id/inProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar_settings"
+            android:text="Listings"
+            android:textStyle="bold"
+            android:layout_marginStart="2sp"
+            android:textColor="@color/colorLightBlack"
+            android:textSize="27sp" />
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_below="@+id/inProgress"
+            android:orientation="vertical" />
+
+        <android.support.v7.widget.RecyclerView
+            android:nestedScrollingEnabled="true"
+            android:id="@+id/listRecyler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listRecyler"
+            android:layout_marginStart="3sp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List another space"
+                android:textColor="@color/colorLightBlack"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/ivAdd_1"
+                android:layout_width="18sp"
+                android:layout_height="18sp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="11dp"
+                android:layout_marginTop="3sp"
+                app:srcCompat="@drawable/add_button_lite" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvNoList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listRecyler"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="120dp"
+            android:gravity="center"
+            android:text="No list created!"
+            android:textColor="@color/appColor"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

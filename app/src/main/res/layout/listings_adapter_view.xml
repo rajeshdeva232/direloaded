@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150sp"
+    android:layout_marginBottom="5sp"
+    android:layout_marginTop="5sp"
+    app:cardCornerRadius="2sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="3sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvInprogress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5sp"
+                android:text="In Progress"
+                android:textColor="@color/colorLightBlack"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8sp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/tvContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2sp"
+                        android:text="786, Timber Oak Drive"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvStateCity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2sp"
+                        android:text="Riverside, california"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvComplete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2sp"
+                        android:text="96% Complete"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivProfile"
+                    android:layout_width="95dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentEnd="true"
+                    android:padding="2dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/index" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="@style/MyProgressBarTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="12sp"
+                    android:layout_below="@+id/tvContent"
+                    android:layout_marginEnd="105sp"
+                    android:layout_marginStart="3sp"
+                    android:layout_marginTop="7sp"
+                    android:progress="80"
+                    android:theme="@style/MyProgressBarTwo" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#DCDCDC" />
+    </RelativeLayout>
+</RelativeLayout>

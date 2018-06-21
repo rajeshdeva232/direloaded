@@ -1,0 +1,213 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorPrimaryRipple</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/red</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="theme">
+        <item name="colorPrimary">@color/colorWhite</item>
+        <item name="colorPrimaryDark">@color/colorWhite</item>
+        <item name="colorAccent">@color/colorWhite</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--Predefined-->
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base" />
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+    </style>
+
+
+    <style name="profile_Layout">
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginEnd">15dp</item>
+        <item name="android:layout_marginStart">15dp</item>
+    </style>
+
+    <style name="profile_Layout_view">
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/gainsboro</item>
+
+    </style>
+
+    <style name="booknow_view">
+        <item name="android:background">@color/gainsboro</item>
+    </style>
+
+    <style name="profile_Layout_content">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:layout_marginStart">5dp</item>
+
+    </style>
+
+    <style name="profile_content">
+        <!--<item name="android:layout_marginTop"> 5dp </item>-->
+        <item name="android:layout_marginEnd">3dp</item>
+        <item name="android:layout_marginStart">3dp</item>
+
+    </style>
+
+    <style name="profile">
+        <item name="android:layout_marginTop">35dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+
+    </style>
+
+    <style name="profile_ic">
+        <item name="android:layout_marginTop">35dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MyProgressBarTwo" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="colorButtonNormal">#f50057</item>
+        <item name="colorControlActivated">#33691e</item>
+        <item name="colorControlHighlight">#ff6d00</item>
+        <item name="android:progressDrawable">@drawable/progressbar_horizontal_bar</item>
+        <item name="android:minWidth">200dp</item>
+    </style>
+
+    <style name="CalendarCell">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+    </style>
+
+    <style name="CalendarCell.CalendarDate">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--Times Square Calendar-->
+    <style name="CalendarTitle">
+        <item name="android:textSize">@dimen/calendar_text_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CalendarCell.DayHeader">
+        <item name="android:textSize">@dimen/calendar_text_small</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/duskYellow</item>
+        <item name="colorControlActivated">@color/colorLightBlack</item>
+    </style>
+
+    <style name="MyMaterialTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="MyMaterialTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="loginandsignup">
+        <item name="android:layout_marginStart">27dp</item>
+        <item name="android:layout_marginEnd">27dp</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_color</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <style name="SignupTextStyle">
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">27dp</item>
+    </style>
+    <style name="view_signinandsignup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginStart">27dp</item>
+        <item name="android:layout_marginEnd">27dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:background">#80BFC2</item>
+    </style>
+
+    <style name="myDialog" parent="@style/Theme.AppCompat.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:statusBarColor">@color/appColor</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="bottom_bartext">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/view_show</item>
+    </style>
+    <style name="rateing_bar" parent="Base.Widget.AppCompat.RatingBar.Small">
+        <item name="colorControlNormal">@color/colorDarkBlack</item>
+        <item name="colorControlActivated">@color/appColor</item>
+    </style>
+
+    <style name="view_listingdetails">
+        <item name="android:layout_marginStart">15dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginEnd">15dp</item>
+        <item name="android:background">@color/silver</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+    <style name="image_Attributtes">
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@null</item>
+    </style>
+
+</resources>

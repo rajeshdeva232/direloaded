@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="9dp">
+
+        <RelativeLayout
+            android:id="@+id/topPanel"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/square"
+            android:elevation="4dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/ivBack"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="@dimen/back_arrow_top"
+                android:layout_marginTop="@dimen/back_arrow_start"
+                app:srcCompat="@drawable/back_arrow_black" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/back_arrow_start"
+                android:text="Madurai"
+                android:id="@+id/search_hint"
+                android:textColor="#000"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbarSize="1sp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/btnalldates"
+                    android:background="@drawable/corn"
+                    android:elevation="32dp"
+                    android:text="All dates"
+                    android:textSize="12sp" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/btnguest"
+                    android:background="@drawable/corn"
+                    android:elevation="32dp"
+                    android:text="Guest"
+                    android:textSize="12sp" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/corn"
+                    android:id="@+id/btnhometype"
+                    android:elevation="32dp"
+                    android:text="Home Type"
+                    android:textSize="12sp" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/btnprice"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/corn"
+                    android:elevation="32dp"
+                    android:text="Price"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#fff"
+            android:elevation="16dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/backdrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_margin="10dp"
+                    android:elevation="32dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:elevation="4dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="Private - 2 Bed"
+                        android:textColor="#000"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="Experience Madurai with"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="our Hospitality!"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="$ 11 Per night"
+                        android:textColor="#000"
+                        android:textSize="14sp" />
+
+                    <RatingBar
+                        android:id="@+id/rating"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:stepSize="2"
+                        android:theme="@style/RatingBar" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerListing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100sp" />
+    </LinearLayout>
+</RelativeLayout>

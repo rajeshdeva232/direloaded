@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/account_background"
+            android:elevation="5dp"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/ivBack"
+                android:layout_width="@dimen/back_arrow_size"
+                android:layout_height="@dimen/back_arrow_size"
+                android:layout_marginStart="@dimen/back_arrow_top"
+                android:layout_marginTop="@dimen/back_arrow_start"
+                app:srcCompat="@drawable/back_ic" />
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+        <!--<android.support.design.widget.AppBarLayout-->
+            <!--android:id="@+id/app_bar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:fitsSystemWindows="true"-->
+            <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+
+            <!--<android.support.design.widget.CollapsingToolbarLayout-->
+                <!--android:id="@+id/toolbar_layout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:fitsSystemWindows="true"-->
+                <!--app:contentScrim="?attr/colorPrimary"-->
+                <!--app:layout_scrollFlags="scroll|exitUntilCollapsed"-->
+                <!--app:titleEnabled="false"-->
+                <!--app:toolbarId="@+id/toolbar">-->
+
+                <!--<android.support.v7.widget.Toolbar-->
+                    <!--android:id="@+id/toolbar"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:background="@android:color/transparent"-->
+                    <!--android:layout_height="?attr/actionBarSize"-->
+                    <!--app:layout_collapseMode="pin"-->
+                    <!--app:popupTheme="@style/AppTheme.PopupOverlay">-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_marginTop="15dp">-->
+
+                        <!--<android.support.v7.widget.AppCompatImageView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--app:srcCompat="@drawable/back_ic"-->
+                            <!--android:layout_alignParentStart="true"/>-->
+
+
+                    <!--</RelativeLayout>-->
+                <!--</android.support.v7.widget.Toolbar>-->
+
+
+            <!--</android.support.design.widget.CollapsingToolbarLayout>-->
+        <!--</android.support.design.widget.AppBarLayout>-->
+
+
+        <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScroll"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_layout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/content_layout"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title_header_layout"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/list_location_title"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textStyle="bold"
+                        android:textSize="35sp"
+                        android:text="Dropinn"
+                        android:textColor="@color/material_grey_800"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="10dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/rooms_layout"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/list_location_title"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/number_of_bedrooms"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="bedroom"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/material_grey_800"
+                            android:textSize="18sp"
+                            android:layout_weight="1"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/space"
+                            android:layout_below="@+id/list_location_title"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text=" - "
+                            android:gravity="center_vertical"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_weight="1"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/number_of_bathrooms"
+                            android:gravity="center_vertical"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:layout_weight="1"
+                            android:text="bathroom"
+                            android:textColor="@color/material_grey_800"
+                            android:textSize="18sp"
+                            />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="3"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        style="@style/booknow_view"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/list_title"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="Description"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/material_grey_800"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        style="@style/booknow_view"
+                        />
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/room_info_layout"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/profile_layout"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/list_type"
+                            android:text="Entire Place"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/primary_text_default_material_light"
+                            android:gravity="center_vertical"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/hosted_by"
+                            android:text="Hosted by "
+                            android:layout_below="@+id/list_type"
+                            android:gravity="center_vertical"
+                            android:textSize="18sp"
+
+                            android:textColor="@color/material_grey_800"
+                            android:layout_alignParentBottom="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/host_name"
+                            android:hint="Host Name"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_below="@+id/list_type"
+                            android:gravity="center_vertical"
+                            android:layout_toEndOf="@+id/hosted_by"
+                            android:layout_alignParentBottom="true"
+                            />
+
+                    </RelativeLayout>
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/profile_image"
+                        android:src="@drawable/placeholder"
+                        android:foregroundGravity="center"
+                        android:layout_alignParentEnd="true"
+                        />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    style="@style/booknow_view"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/date_layout"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/check_in_date"
+                        android:text="Tuesday\n Jan 31"
+                        android:gravity="center_vertical|start"
+                        android:textColor="@color/material_grey_800"
+                        android:textSize="27sp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="10sp"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="40sp"
+                        style="@style/booknow_view"
+                        android:rotation="35"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/check_out_date"
+                        android:text="Thursday\n Feb 2"
+                        android:gravity="center_vertical|end"
+                        android:textColor="@color/material_grey_800"
+
+                        android:layout_centerVertical="true"
+                        android:textSize="27sp"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    style="@style/booknow_view"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nights_layout"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_nights"
+                        android:text="Nights"
+                        android:layout_alignParentStart="true"
+
+                        android:textColor="@color/material_grey_800"
+                        android:textSize="20sp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/number_of_nights"
+                        android:text="3"
+                        android:gravity="end"
+
+                        android:textColor="@color/material_grey_800"
+                        android:textSize="20sp"
+                        android:layout_alignParentEnd="true"
+                        />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    style="@style/booknow_view"
+                    android:layout_below="@+id/title_header_layout"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/guests_layout"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_guests"
+                        android:text="Guests"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+
+                        android:textColor="@color/material_grey_800"
+                        android:textSize="20sp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/number_of_guests"
+                        android:text="2"
+                        android:gravity="end"
+
+                        android:textColor="@color/material_grey_800"
+                        android:textSize="20sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    style="@style/booknow_view"
+                    />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|start"
+                        android:id="@+id/txt_room_price"
+                        android:textColor="@color/material_grey_800"
+                        android:textSize="20sp"
+                        android:text="$110"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|end"
+                        android:id="@+id/txtmultiply"
+                        android:textColor="@color/material_grey_800"
+                        android:textSize="20sp"
+                        android:text="x"
+                        android:layout_toEndOf="@+id/txt_room_price"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|end"
+                        android:id="@+id/txt_no_of_nights"
+                        android:textColor="@color/material_grey_800"
+                        android:textSize="20sp"
+                        android:text="2 nights"
+                        android:layout_toEndOf="@+id/txtmultiply"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|end"
+                        android:id="@+id/room_price"
+                        android:textColor="@color/material_grey_800"
+                        android:textSize="20sp"
+                        android:text="$ 220"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    style="@style/booknow_view"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|start"
+                        android:id="@+id/txt_service_pricr"
+                        android:textColor="@color/material_grey_800"
+                        android:textSize="20sp"
+                        android:text="@string/cleaning_charge"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|end"
+                        android:id="@+id/cleaning_price"
+                        android:textColor="@color/material_grey_800"
+                        android:textSize="20sp"
+                        android:text="$ 50"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    style="@style/booknow_view"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|start"
+                        android:id="@+id/txt_cleaning_price"
+                        android:textColor="@color/material_grey_800"
+                        android:textSize="20sp"
+                        android:text="@string/service_charge"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|end"
+                        android:id="@+id/service_price"
+                        android:textColor="@color/material_grey_800"
+                        android:textSize="20sp"
+                        android:text="$100"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    style="@style/booknow_view"
+                    android:layout_below="@+id/title_header_layout"
+                    />
+
+
+                <RelativeLayout
+                    android:id="@+id/Weekly_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:id="@+id/Weekly_price_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp">
+
+                        <TextView
+                            android:id="@+id/txt_Weekly_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|start"
+                            android:text="Weekly Price"
+                            android:textColor="@color/material_grey_800"
+                            android:textSize="20sp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true" />
+
+                        <TextView
+                            android:id="@+id/wekly_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:gravity="center_vertical|end"
+                            android:text="$30"
+                            android:textColor="@color/material_grey_800"
+                            android:textSize="20sp" />
+
+                    </RelativeLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/Weekly_price_lay"
+                        style="@style/booknow_view"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|start"
+                        android:id="@+id/txt_Monthly_price"
+                        android:textColor="@color/material_grey_800"
+                        android:textSize="20sp"
+                        android:text="Monthly Price"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|end"
+                        android:id="@+id/monthly_price"
+                        android:textColor="@color/material_grey_800"
+                        android:textSize="20sp"
+                        android:text="$30"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:visibility="visible"
+                    style="@style/booknow_view"
+                    android:layout_below="@+id/title_header_layout"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|start"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/txt_total_price"
+                        android:textColor="@color/material_grey_800"
+                        android:textSize="20sp"
+                        android:text="Total price"
+                        android:layout_alignParentStart="true"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|end"
+                        android:id="@+id/total_price"
+                        android:textColor="@color/material_grey_800"
+                        android:textStyle="bold"
+                        android:textSize="30sp"
+                        android:text="$370"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pay_button"
+                android:layout_margin="15dp"
+                android:layout_below="@+id/content_layout"
+                android:text="Pay"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/inbox_btn"
+                android:textSize="20sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        </RelativeLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
